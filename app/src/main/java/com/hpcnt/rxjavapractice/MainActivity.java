@@ -14,6 +14,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Observable.just("Hello Rx!")
-                .subscribe(s -> Log.e("onNext", s));
+                .subscribe(s -> Log.e("onNext", s + " " + "powered by RxJava..."));
     }
 }
